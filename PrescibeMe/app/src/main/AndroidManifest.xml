@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="za.co.presc.prescibeme"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="za.co.presc.prescibeme.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name="za.co.presc.prescibeme.RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name="za.co.presc.prescibeme.Booking"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="za.co.presc.prescibeme.Appointments"
+           />
+        <activity
+            android:name="za.co.presc.prescibeme.Navigation"
+            android:label="@string/title_activity_navigation"
+           />
+    </application>
+
+</manifest>
